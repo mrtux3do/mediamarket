@@ -32,4 +32,16 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	public $uses = array('Category');
+
+	public function beforeFilter() {
+	    parent::beforeFilter();
+	    $this->getCategory();
+	}
+
+	public function getCategory(){
+		$data = $this->Category->find('all');
+		$this->set('category', $data);
+	}
+
 }
