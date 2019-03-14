@@ -29,7 +29,7 @@
 									?>
 								</li>
 								<li> 
-									<a href="#"> Login </a>
+									<a class="btn-popup"> Login </a>
 								</li>
 							</ul>
 						</li>

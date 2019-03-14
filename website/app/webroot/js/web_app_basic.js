@@ -58,7 +58,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#myaccount").hover(function(){
+	$("#myaccount").on('click',function(){
 		if($("#account:first").is( ":hidden" )){
 			$("#account").slideDown("slow");
 		} else{
@@ -74,6 +74,17 @@ $(document).ready(function(){
 			+ '<div> <span>%M</span> <p> min </p> </div>'
 			+ '<div> <span>%S</span> <p> sec </p> </div>'));
 		});
+
+	//Click login show popup
+	$('.btn-popup').on('click', function(){
+		$('.login-popup').show();
+	});
+
+
+	//Click close popup
+	$('#btn-close').on('click', function(){
+		$('.login-popup').hide();
+	});
 
 });
 
