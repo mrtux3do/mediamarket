@@ -67,47 +67,48 @@ $(document).ready(function(){
 	});
 
 	$('.product-deal #count-down').countdown('2020/10/20').on('update.countdown', function(event) {
-  		var $this = $(this).html(event.strftime(''
-    		+ '<div> <span>%-w</span> <p> week%!w </p> </div>'
-    		+ '<div> <span>%-d</span> <p> day%!d </p> </div>'
-    		+ '<div> <span>%H</span> <p> hr </p> </div>'
-    		+ '<div> <span>%M</span> <p> min </p> </div>'
-    		+ '<div> <span>%S</span> <p> sec </p> </div>'));
+		var $this = $(this).html(event.strftime(''
+			+ '<div> <span>%-w</span> <p> week%!w </p> </div>'
+			+ '<div> <span>%-d</span> <p> day%!d </p> </div>'
+			+ '<div> <span>%H</span> <p> hr </p> </div>'
+			+ '<div> <span>%M</span> <p> min </p> </div>'
+			+ '<div> <span>%S</span> <p> sec </p> </div>'));
 		});
+
 });
 
-	//Add class first item and last item
-    function checkClasses(){
-        var total = $('.extra-product .owl-stage .owl-item.active').length;
-        
-        $('.extra-product .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
-        
-        $('.extra-product .owl-stage .owl-item.active').each(function(index){
-            if (index === 0) {
-                // this is the first one
-                $(this).addClass('firstActiveItem');
-            }
-            if (index === total - 1 && total>1) {
-                // this is the last one
-                $(this).addClass('lastActiveItem');
-            }
-        });
-    }
+//Add class first item and last item
+function checkClasses(){
+	var total = $('.extra-product .owl-stage .owl-item.active').length;
+	
+	$('.extra-product .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
+	
+	$('.extra-product .owl-stage .owl-item.active').each(function(index){
+		if (index === 0) {
+			// this is the first one
+			$(this).addClass('firstActiveItem');
+		}
+		if (index === total - 1 && total>1) {
+			// this is the last one
+			$(this).addClass('lastActiveItem');
+		}
+	});
+}
 
-    function trendClasses(){
-        var total = $('.slide-trend-product .owl-stage .owl-item.active').length;
-        
-        $('.slide-trend-product .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
-        
-        $('.slide-trend-product .owl-stage .owl-item.active').each(function(index){
-            if (index === 0) {
-                // this is the first one
-                $(this).addClass('firstActiveItem');
-            }
-            if (index === total - 1 && total>1) {
-                // this is the last one
-                $(this).addClass('lastActiveItem');
-            }
-        });
-    }
+function trendClasses(){
+	var total = $('.slide-trend-product .owl-stage .owl-item.active').length;
+	
+	$('.slide-trend-product .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
+	
+	$('.slide-trend-product .owl-stage .owl-item.active').each(function(index){
+		if (index === 0) {
+			// this is the first one
+			$(this).addClass('firstActiveItem');
+		}
+		if (index === total - 1 && total>1) {
+			// this is the last one
+			$(this).addClass('lastActiveItem');
+		}
+	});
+}
 
