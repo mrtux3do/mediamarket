@@ -20,7 +20,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Web app
+		Vigodi
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
