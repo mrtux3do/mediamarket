@@ -33,6 +33,13 @@ $(document).ready(function(){
 		// nestedItemSelector: true
 	});
 
+	$(".slide-new-product").owlCarousel({
+		loop:true,
+		items: 1,
+		dots: false,
+		nav: true,		
+	});
+
 	checkClasses();
 	$(".extra-product").on('translated.owl.carousel', function(event) {
 		checkClasses();
