@@ -5,26 +5,6 @@
 	<img class="item" src="<?php echo $this->webroot ?>img/slide2.jpg">
 </div>
 
-<!-- Login popup -->
-<div class="login-popup">
-	<div class="pop-up-content">
-		<label id="btn-close"></label>
-		<form method="POST" action="/website/Auth/login">
-			<div class="form-group" style="margin-bottom: 50px">
-				<label>Email</label>
-				<input type="email" name="data[User][email]" id="email" required placeholder="email">
-			</div>
-			<div class="form-group">
-				<label>Password</label>
-				<input type="password" name="data[User][password]" id="password" required placeholder="password">
-			</div>
-			<button type="submit" id="btn-login">Log in</button>
-		</form>
-	</div>
-</div>
-
-
-
 
 <div class="wrapper">
 	<div class="container">

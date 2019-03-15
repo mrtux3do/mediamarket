@@ -93,6 +93,22 @@ $(document).ready(function(){
 		$('.login-popup').hide();
 	});
 
+	$('.hbh').hover(function(){
+		if($(".sub-menu-hbh:first").is( ":hidden" )){
+			$(".sub-menu-hbh").slideDown("slow");			
+		} else{
+			$(".sub-menu-hbh").hide();
+		}		
+	});
+
+	$('.hln').hover(function(){
+		if($(".sub-menu-hln:first").is( ":hidden" )){
+			$(".sub-menu-hln").slideDown("slow");			
+		} else{
+			$(".sub-menu-hln").hide();
+		}		
+	});
+
 });
 
 //Add class first item and last item

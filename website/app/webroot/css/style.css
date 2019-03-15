@@ -141,19 +141,20 @@ body, html, h2, a, p, *:before,h1, ul, li {
 	position: absolute !important;
 	width: 240px;
 	background: #fff;
-	border: 1px solid;
+	border: 2px solid #eab90a;
 	top: 59px;
 	display: none;
 	z-index: 999;
+	padding: 0 20px;
 }
 
 
 #account li{
 	float: none !important;
 	line-height: 50px !important;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #f1f1f1;
+	padding-left: 10px;
 	margin: 0 !important;
-	padding-left: 30px;
 	transition: all 0.6s ease;
 	-webkit-transition: all 0.6s ease;
 	-moz-transition: all 0.6s ease;
@@ -169,7 +170,7 @@ body, html, h2, a, p, *:before,h1, ul, li {
 	color: #eab90a;
 }
 #account li:hover{
-	padding-left: 50px;
+	padding-left: 20px;
 	transition: all 0.6s ease;
 	-webkit-transition: all 0.6s ease;
 	-moz-transition: all 0.6s ease;
@@ -349,6 +350,7 @@ li#compare:after{
 	text-align: left;
 	padding-left: 30px;
 	position: relative;
+	text-transform: uppercase;
 }
 
 #sort-category > button:after{
@@ -450,22 +452,21 @@ li#compare:after{
 	overflow: hidden;
 }
 
-#main-menu ul{
+#main-menu ul.drop-down{
 	overflow:  hidden;
 	display: inline-block;
-	float: right;
 }
 
-#main-menu ul li{
+#main-menu ul.drop-down > li{
 	font-family: 'circular-light';
 	float:  left;
-	margin-right: 30px;
+	margin-right: 70px;
 	font-size: 15px;
 	text-transform: uppercase;
 	line-height: 105px;
 }
 
-#main-menu ul li:hover{
+#main-menu ul.drop-down #menu-active:hover{
 	color: #eab90a;
 	cursor: pointer;
 }
@@ -495,7 +496,54 @@ li#compare:after{
 .wrapper{
 	margin: 0 auto;
 }
+.sub-menu-hbh, .sub-menu-hln{
+	display: none;
+	position: absolute;
+	background: white;
+	z-index: 9999;
+	width: 14%;
+	border: 2px solid #eab90a;
+	padding: 0 35px;
+}
 
+.sub-menu-hln{
+	width: 20%;
+}
+.sub-menu-hbh #menu-hbh div, .sub-menu-hln #menu-hln div{
+	display: block;
+	float: none !important;
+	width: 100%;
+	padding-left: 25px;
+	line-height: 50px !important;
+	border-bottom: 1px solid #f1f1f1;
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+}
+
+.sub-menu-hbh #menu-hbh div:hover, .sub-menu-hln #menu-hln div:hover{
+	color: #eab90a;
+	padding-left: 50px;
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+}
+
+.sub-menu-hbh #menu-hbh div:last-child, .sub-menu-hln #menu-hln div:last-child{
+	border-bottom: none;
+}
+
+.sub-menu-hbh #menu-hbh, .sub-menu-hln #menu-hln{
+	width: 100%;
+}
+
+#main-menu ul.drop-down #menu-active:hover .sub-menu-hbh, #main-menu ul.drop-down #menu-active:hover .sub-menu-hln{
+	color: black;
+}
 /* Static cms */
 .static_cms{
 	border: 1px solid #ebebeb;
@@ -1660,7 +1708,7 @@ li#compare:after{
 
 .new-product .title-new-product h2{
 	font-family: 'circular' !important;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .title-new-product, .item-new-product{
@@ -1680,7 +1728,7 @@ li#compare:after{
 }
 
 .slide-new-product .owl-nav{
-    position: absolute;
-    top: -94px;
-    right: 10px;	
+	position: absolute;
+	top: -94px;
+	right: 10px;	
 }
