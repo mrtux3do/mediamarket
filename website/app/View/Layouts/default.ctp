@@ -43,9 +43,26 @@
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body class="tuan">
+		<!-- Login popup -->
+	<div class="login-popup">
+		<div class="pop-up-content">
+			<label id="btn-close"></label>
+			<form method="POST" action="/website/Auth/login">
+				<div class="form-group" style="margin-bottom: 50px">
+					<label>Email</label>
+					<input type="email" name="data[User][email]" id="email" required placeholder="email">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" name="data[User][password]" id="password" required placeholder="password">
+				</div>
+				<button type="submit" id="btn-login">Log in</button>
+			</form>
+		</div>
+	</div>
 	<div id="header">
-		<?php echo $this->element('header', array('category', $category)); ?>
+		<?php echo $this->element('header'); ?>
 	</div>
 
 	<div id="content">

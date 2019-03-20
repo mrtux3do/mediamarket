@@ -63,19 +63,19 @@
                             </div>
                             <div class="form-group">
                                 <label class="required">Date of birth</label>
-                                <select class="opt-day">
+                                <select class="opt-day" name="day">
                                     <option>Ngày</option>
                                     <?php foreach(range(1, 31) as $day): ?>
                                         <option><?php echo $day ?></option>
                                     <?php endforeach; ?>
                                 </select>
-                                <select class="opt-month">
+                                <select class="opt-month" name="month">
                                     <option>Tháng</option>
                                     <?php foreach(range(1, 12) as $month): ?>
                                         <option><?php echo $month ?></option>
                                     <?php endforeach; ?>
                                 </select>
-                                <select class="opt-year">
+                                <select class="opt-year" name="year">
                                     <option>Năm</option>
                                     <?php foreach(range(date('Y'), 1900) as $year): ?>
                                         <option><?php echo $year ?></option>
@@ -83,7 +83,7 @@
                                 </select>
                             </div>
                             <div class="form-group" style="width: 50%">
-                                <button class="btn-register">Register</button>
+                                <button type="submit" class="btn-register">Register</button>
                             </div>
                         </form>
 					</div>

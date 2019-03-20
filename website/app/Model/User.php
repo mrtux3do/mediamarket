@@ -2,8 +2,6 @@
 
 App::uses('Model', 'Model');
 
-class Users extends AppModel {
-	
+class User extends AppModel {
+	public $useTable = "t_user";
 }
-
-?>
