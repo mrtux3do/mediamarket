@@ -58,9 +58,13 @@
 					<ul>
 						<li id="compare"><span>0</span></li>
 						<li id="wishlist"><span>0</span></li>
-						<li id="cart"><span>0</span></li>
-						<li id="price">$0.00</li>
+						<li id="cart">
+							<span>0</span>
+						</li>
 					</ul>
+					<div class="cart-noti">
+						Giỏ hàng của bạn đang rỗng!
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,7 +75,7 @@
 	<div class="container">
 		<div class="row">
 		<div id="main-menu">
-			<div class="col-lg-3" style="position: unset;">
+			<div class="col-lg-3 col-md-3" style="position: unset;">
 				<div id="sort-category">
 				<button>Danh mục sản phẩm</button>
 				<div class="item-categories">
@@ -85,7 +89,7 @@
 				</div>
 				</div>
 			</div>
-			<div class="col-lg-9" style="position: unset;">
+			<div class="col-lg-9 col-md-9" style="position: unset;">
 				<ul class="drop-down">
 				<li>Trang Chủ</li>
 				<li id="menu-active" class="hbh">

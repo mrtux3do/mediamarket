@@ -43,7 +43,7 @@
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body class="tuan">
 		<!-- Login popup -->
 	<div class="login-popup">
 		<div class="pop-up-content">
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div id="header">
-		<?php echo $this->element('header', array('category', $category)); ?>
+		<?php echo $this->element('header'); ?>
 	</div>
 
 	<div id="content">
