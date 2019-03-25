@@ -15,12 +15,12 @@ class CommonController extends AppController {
 							'action' => 'login'
 					),
 					'loginRedirect' => [
-							'controller' => 'Pages',
-							'action' => 'display'
+							'controller' => 'Products',
+							'action' => 'index'
 					],
 					'logoutRedirect' => [
-							'controller' => 'Auth',
-							'action' => 'login'
+							'controller' => 'Products',
+							'action' => 'index'
 					],
 					'authenticate' => [
 							'Form' => [

@@ -71,12 +71,12 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '192.168.0.91',
 		'login' => 'root',
-		'password' => '12345',
-		'database' => 'cakephp',
+		'password' => '1234',
+		'database' => 'vigodi',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 
 	public $test = array(

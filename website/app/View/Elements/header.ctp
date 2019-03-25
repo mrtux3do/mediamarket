@@ -17,7 +17,10 @@
 						<li>Help & Contact</li>
 						<li>Order Status</li>
 						<li id="myaccount">
-							<p>My Account</p>
+							<p><?php if(!empty($user)) {
+										echo $user['name'];
+									} else {echo "My Account";}
+							?></p>
 							<ul id="account">
 								<li> 
 									<?php echo $this->Html->link( 'Register', 
@@ -29,7 +32,15 @@
 									?>
 								</li>
 								<li> 
-									<a class="btn-popup"> Login </a>
+									<a class="btn-popup"> <?php if(!empty($user)) {
+										echo $this->Html->link( 'Logout', 
+												array(
+													'controller' => 'Auth',
+													'action' => 'logout',
+													'full_base' => true
+												)); 									
+									} else {echo "Login";}
+							?> </a>
 								</li>
 							</ul>
 						</li>
