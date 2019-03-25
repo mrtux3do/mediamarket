@@ -306,11 +306,11 @@ li#compare:after{
 #cart-wish .cart-noti{
 	display: none;
 	position: absolute;
-    bottom: -60px;
-    width: 300px;
-    background: #f3f3f3;
-    padding: 35px;
-    left: 0px;
+	bottom: -60px;
+	width: 300px;
+	background: #f3f3f3;
+	padding: 35px;
+	left: 0px;
 }
 
 #cart-wish .cart-noti:before{
@@ -1890,18 +1890,18 @@ li#compare:after{
 
 .box-cart .wish-list:before{
 	content: '\f08a';
-    font-family: 'FontAwesome' !important;
+	font-family: 'FontAwesome' !important;
 	position: absolute;
 	width: 40px;
-    line-height: 40px;
-    top: 0;
-    left: 0;
+	line-height: 40px;
+	top: 0;
+	left: 0;
 }
 
 .box-cart .wish-list{
 	position: relative;
-    width: 40px;
-    height: 40px;
+	width: 40px;
+	height: 40px;
 	vertical-align: middle;
 	background: #eab90a;
 	border-radius: 2px;
@@ -2020,8 +2020,8 @@ li#compare:after{
 /*------------------ RELATED PRODUCT ---------------------*/
 .form-list-product{
 	padding: 25px 20px;
-    border: 1px solid #ebebeb;
-    border-radius: 2px;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
 }
 
 .form-list-product .title-product{
@@ -2035,7 +2035,7 @@ li#compare:after{
 }
 .form-list-product h2{
 	font-family: 'circular' !important;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 /*---------------- COMMON PRODUCT -------------------*/
@@ -2060,7 +2060,35 @@ li#compare:after{
 }
 
 .common-box .owl-nav {
-    position: absolute;
-    top: -93px;
-    right: 0px;
+	position: absolute;
+	top: -93px;
+	right: 0px;
+}
+
+/*------------------- SIDEBAR ----------------------------*/
+.filter-group .add-filter a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-transform: capitalize;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.filter-group .add-filter a:hover{
+	color: #eab90a;
+}
+
+.filter-group .add-filter{
+	padding: 12px 0;
+	line-height: 24px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.filter-group .add-filter:before{
+	
+}
+
+.filter-group .add-filter:last-child{
+	border-bottom: none;
 }

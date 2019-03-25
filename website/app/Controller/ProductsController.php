@@ -26,4 +26,7 @@ class ProductsController extends Controller {
 		$this->set(array('data' => $data, 'relate' => $relate_product));
 	}
 
+	public function listProduct(){
+	}
+
 }
