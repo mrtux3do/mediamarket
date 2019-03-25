@@ -42,4 +42,7 @@ class ProductsController extends CommonController {
 		$this->set(array('data' => $data, 'relate' => $relate_product, 'comments' => $comments));
 	}
 
+	public function listProduct(){
+	}
+
 }
