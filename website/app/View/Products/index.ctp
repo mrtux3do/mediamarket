@@ -308,7 +308,10 @@
 											<?php if($val['Product']['type'] == 'SINGLE ORIGINS'): ?>
 												<div class="item-trend-product">
 													<div class="img-trend-product">
-														<a target="_blank" href="<?php echo $this->Html->url(array('controller' => 'products', 'action' => 'detail',$val['Product']['id']))?>">
+														<a target="_blank" href="<?php echo $this->Html->url(array(
+															'controller' => 'products', 
+															'action' => 'detail', 
+															'?' => array('product_id' => $val['Product']['id'])))?>">
 															<img src="<?php echo $this->webroot.$val['Product']['image'] ?>">
 														</a>
 														<div class="product-flag">
@@ -357,7 +360,10 @@
 											<?php if($val['Product']['type'] == 'ORIGIN PLUS'): ?>
 												<div class="item-trend-product">
 													<div class="img-trend-product">
-														<a target="_blank" href="<?php echo $this->Html->url(array('controller' => 'products', 'action' => 'detail',$val['Product']['id']))?>">
+														<a target="_blank" href="<?php echo $this->Html->url(array(
+															'controller' => 'products', 
+															'action' => 'detail', 
+															'?' => array('product_id' => $val['Product']['id'])))?>">
 															<img src="<?php echo $this->webroot.$val['Product']['image'] ?>">
 														</a>
 														<div class="product-flag">

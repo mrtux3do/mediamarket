@@ -36,6 +36,7 @@
 		echo $this->Html->script('dropzone');
 		echo $this->Html->script('owl.carousel.min');
 		echo $this->Html->script('web_app_basic');
+		echo $this->Html->script('product');
 		echo $this->Html->script('bootstrap');
 		echo $this->Html->script('jquery.countdown.min');
 

@@ -68,21 +68,29 @@
 				</div>
 				<div class="tab-pane" id="tab-review">
 					<table class="box-review">
-						<tr>
-							<td>Username</td>
-							<td>20/03/2019</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<p>It’s both good and bad. If Nikon had achieved a high-quality wide lens camera with a 1 inch sensor, that would have been a very competitive product. So in that sense, it’s good for us. But actually, from the perspective of driving the 1 inch sensor market, we want to stimulate this market and that means multiple manufacturers.</p>
-							</td>
-						</tr>
+						<?php foreach($comments as $comment): ?>
+							<tr>
+								<td><?php echo $comment['User']['name']; ?></td>
+								<td><?php echo $comment['Comment']['created_at']; ?></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p><?php echo $comment['Comment']['message']; ?></p>
+								</td>
+							</tr>
+						<?php endforeach; ?>
 					</table>
-					<h2>Để lại bình luận</h2>
-					<form action="" method="">
-						<textarea name="text" id="input-review" rows="10"></textarea>
-						<button type="button" id="btn-cmt">Gửi bình luận</button>
-					</form>
+					<div class="comment">
+						<?php if(isset($user)){ ?>			
+							<h2>Để lại bình luận</h2>
+							<form action="" method="">
+								<textarea name="text" id="input-review" rows="10"></textarea>
+								<button type="button" id="btn-cmt">Gửi bình luận</button>
+							</form>						
+						<?php } else { ?>
+							<h2>Hãy đăng nhập để để lại bình luận</h2>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
 		</div>		
